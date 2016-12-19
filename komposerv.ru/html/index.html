@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>| Private Terminal Emulator |</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <meta name="description" content="Private Terminal Emulator" />
+        <meta name="viewport" content="width=device-width">
+        <link href="css/terminal.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css">
+        <link href="css/main.css" rel="stylesheet" />
+    </head>
+    <body ng-app="ng-terminal-example">
+        <section class="console-section">
+            <section class="container">
+                <section class="head">
+                </section>
+                <div ng-controller="console" ng-show="theme == 'vintage'">
+                    <terminal terminal-class="vintage-terminal" terminal-config="vintage">
+                    </terminal>
+                </div>
+            </section>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
+        <script src="js/terminal.js"></script>
+        <script src="js/command.tools.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/command.implementations.js"></script>
+        <script src="js/command.filesystem.js"></script>
+    </body>
+</html>

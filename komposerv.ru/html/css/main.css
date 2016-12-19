@@ -1,0 +1,118 @@
+﻿html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding:0px;
+}
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.console-section {
+    margin:0px;
+    padding:10px;
+    background: rgb(0,0,0);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d',GradientType=1 );
+}
+
+
+.container {
+    width: 720px;
+    margin: 0px auto;
+    color: #FFF;
+}
+.head {
+    font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+    color: #FFF;
+    position:relative;
+    height:100px;
+    padding:5px;
+}
+
+.head h1, .head h4 {
+    margin: 3px;
+    font-weight: normal;
+}
+.head h1{
+    font-size:2em;
+    color:yellow;
+}
+.console-options{
+    font-family:Consolas;
+    margin:0 10px 10px 10px;
+}
+
+.terminal-focused .click-me {
+    visibility:hidden;
+}
+
+.terminal{
+    border:1px solid transparent;
+}
+.vintage-terminal.terminal {
+    border:none;
+}
+.terminal-focused.terminal{
+}
+
+.terminal-focused.vintage-terminal.terminal{
+    border:none;
+}
+
+a{
+    color:yellow;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .container {
+      width: 100%;
+      margin: 0px auto;
+    }
+    .unit-tests{
+        font-family:Consolas;
+        padding-top:30px;
+    }
+    .gitHub {
+        position:static;
+        background:none;
+        font-size:1em;
+        display:block;
+        padding:0px;
+        margin:0 10px 10px 0;
+        width:auto;
+        height:auto;
+        text-align:right;
+        text-decoration:underline;
+    }
+    .head{
+        padding:0px;
+        font-family:Consolas;
+    }
+    .head h1{
+        margin:2px;
+        padding:0;
+        font-size:1.3em;
+        font-weight:bold;
+    }
+    .head h4{
+        margin:1px;
+        padding:0;
+        font-size:1em;
+        font-weight:normal;
+    }
+    .terminal{
+        margin-top:5px;
+        height:360px;
+    }
+    .console-section, .instructions-section{
+        padding:5px;
+    }
+    .terminal-line{
+        white-space:normal;
+    }
+    #terminal-server-preview{
+        display:none;
+    }
+}
